@@ -1,0 +1,26 @@
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+
+    > .form-control,
+    > .form-select {
+        position: relative;
+        flex: 1 1 auto;
+        width: 1%;
+        min-width: 0;
+    }
+    > .form-control:focus,
+    > .form-select:focus {
+        z-index: 3;
+    }
+    .btn {
+        position: relative;
+        z-index: 2;
+        &:focus {
+            z-index: 3;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+    display: inline-block;
+    vertical-align: middle;
+    height: 3rem;
+    padding: 0.688rem 2rem;
+    user-select: none;
+    border-radius: $border-radius-xs;
+    user-select: none;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: $transition-button;
+    &__primary {
+        background-color: $btn-primary-bg;
+        color: $btn-primary-color;
+        box-shadow: 0px 20px 20px -20px $btn-primary-bg;
+        
+    
+        @media (hover: hover) {
+            &:hover {
+                background-color: $btn-primary-bg-hover;
+                box-shadow: 0px 20px 35px -16px $btn-primary-bg-hover;      
+            }
+
+        }
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+    
+    
+}

@@ -1,0 +1,39 @@
+.header__switcher {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    transition: color .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    cursor: pointer;
+    svg {
+        transition: fill .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    label {
+        cursor: pointer;
+        display: block;
+        padding: .5rem;
+    }
+    &-icon {
+        svg {
+            display: block;
+            fill:$themeColor;
+            stroke: $themeColor;
+            [data-theme="light"] & {
+                &#icon__dark {
+                    display: none;
+                }
+                &#icon__light {
+                    display: block;
+                }
+            }
+            [data-theme="dark"] & {
+                &#icon__dark {
+                    display: block;
+                }
+                &#icon__light {
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
